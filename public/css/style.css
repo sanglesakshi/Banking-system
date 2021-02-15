@@ -1,0 +1,233 @@
+body{
+  font-family: 'Noto Serif JP', serif;
+}
+
+h1{
+  font-family: 'Bree Serif', serif;
+}
+hr{
+  width: 70%;
+  margin-right: 170px;
+  height: 8px;
+}
+p{
+  text-align: center;
+}
+.navbar a{
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.btn{
+  border-radius: 80px;
+}
+.homebtn{
+  margin-left: 50px;
+}
+.moneybtn{
+  margin-left: 200px;
+}
+
+.bg-dark{
+  background-color: #1f1f1f!important;
+}
+
+
+.btn-dark {
+  background-color: #000000;
+  border-color: #000000;
+  color: rgb(255, 255, 255);
+}
+.btn-success:hover {
+  background-color: #2d313b;
+  border-color: #2d313b;
+  color: white;
+}
+.welcome{
+  padding-top: 100px;
+  margin-bottom: 25px;
+  font-size: 1.7rem;
+}
+h1.head1{
+  font-size: 2.7rem;
+  line-height: 0.7;
+  /* font-weight: 700; */
+  /* font-family: 'Cormorant SC', serif; */
+}
+.mainBody{
+  margin: auto;
+  text-align: left;
+}
+.mainBody p{
+  text-align: left;
+}
+.mainHeading{
+  margin-left: 80px;
+}
+.indeximage{
+  float: right;
+}
+.aboutus{
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+  background-color:#eff8ff;
+  /* #daedf4; */
+}
+.imagemoney{
+  float: right;
+}
+
+.add-form-table {
+  padding-top: 2%;
+  color: black;
+  text-align: center;
+  background-color:#f4f9f9;
+  /* #fff2f9; */
+  /* #fff3e6; */
+}
+
+.alltransactions {
+  /* background-image: url('/imgs/bg1.jpg');
+  background-position: center;
+  background-repeat: no-repeat; */
+  height: 91vh;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.transfer{
+  /* background-image: url('/imgs/bankbg.png');
+  opacity: 50%;
+  background-position: center;
+  background-repeat: no-repeat; */
+  /* height: 91vh;
+   background-size: cover;
+  background-attachment: fixed; */
+}
+
+#allaccount {
+  /* background-image: url('bankbg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 91vh; */
+}
+
+.transfer-money-form{
+  text-align: left;
+  margin-left: 120px;
+  margin-top: 80px;
+  line-height: 1;
+  /* background: url("/imgs/bg3.jpg");
+  height: 91vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+}
+/* .form{
+  margin-top: 40px;
+} */
+.form-control{
+  width:50%!important;
+  font-size: 1.2rem;
+}
+.submit-btn{
+  margin-top: 0px;
+  margin-left: 20px;
+}
+label{
+  font-size: 1.2rem;
+}
+/* .submit-btn{
+  padding-left: 15%;
+} */
+.footer{
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  position:static;
+}
+.footer a{
+  color: black;
+}
+.fab{
+  margin: 5px;
+}
+.fab:hover{
+  color: blue;
+}
+
+@media (max-width: 1028px) {
+  hr{
+    margin:auto;
+  }
+
+  table, thead, tbody, th, td, tr {
+  display: block;
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+tr { border: 1px solid #ccc; }
+
+td {
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 50%;
+}
+
+td:before {
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+
+
+
+	.mainHeading{
+		text-align: center;
+		margin:30px;
+
+	}
+  .mainHeading p{
+    text-align: center;
+  }
+  /* .add-form-table{
+    background-color: white;
+  } */
+img{
+    /* width:100%; */
+    width: 100%;
+max-width: 400px;
+height: auto;
+  }
+  .transfer-money-form{
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+  }
+  #credit{
+    margin: auto;
+  }
+  .submit-btn{
+    margin: auto;
+  }
+}

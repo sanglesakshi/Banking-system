@@ -1,0 +1,27 @@
+
+
+<%- include("partials/header"); -%>
+
+<div class="alltransactions">
+  <h1 class="text-center heading1 py-3">Transaction History</h1>
+  <div class="container add-form-table">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Sender's Name</th>
+          <th scope="col">Reciever's Name</th>
+          <th scope="col">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% transactions.forEach(function(transaction){ %>
+        <tr>
+          <th scope="row"><%=transaction.sendersName%></th>
+          <td><%=transaction.recieversName%></td>
+          <td><%=transaction.amount%></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>

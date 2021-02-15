@@ -1,0 +1,40 @@
+<%- include("partials/header") %>
+   <div class="transfer">
+     <div class="row">
+
+
+          <div class="col-lg-5">
+           <div class="transfer-money-form">
+           <h2>Transferring From: </h2>
+           <hr>
+           <h6>Customer Name: <%= fromUser.name %></h6>
+           <h6><i class="fas fa-wallet"></i> Balance= <%= fromUser.credits %></h6><br>
+           <h2>Transferring To: </h2>
+           <hr>
+           <h6>Customer Name: <%= toUser.name %></h6>
+           <h6><i class="fas fa-wallet"></i> Balance= <%= toUser.credits %></h6>
+
+             <form action="/transfer/<%= fromUser._id %>/<%= toUser._id %>?_method=PUT" method="POST">
+             <label for="credits">Amount to be transferred:</label>
+             <br><br>
+             <input type="number" class="form-control" id="credit" name="credit" placeholder="" value="">
+             <br>
+             <div class="submit-btn">
+                 <a href="/"><button type="button" class="btn btn-danger btn-lg">Cancel</button></a>
+                 <button type="submit" class="btn btn-success btn-lg">Transfer</button>
+
+             </div>
+             </form>
+             </div>
+             </div>
+
+             <div class="imagemoney col-lg-7">
+               <img src="/imgs/money.png" alt="image">
+             </div>
+
+            </div>
+
+   </div>
+
+
+<%- include("partials/footer") %>

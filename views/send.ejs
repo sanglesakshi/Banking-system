@@ -1,0 +1,33 @@
+<%- include("partials/header"); -%>
+<div id="allaccount">
+  <h1 class="text-center heading1 py-3">Accounts</h1>
+  <p>select person to transfer money</p>
+  <div class="container add-form-table">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Balance</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(let person of users){ %>
+            <% if(!customer._id.equals(person._id)){ %>
+        <tr>
+          <th scope="row"><%=person.name%></th>
+          <td><%=person.email%></td>
+          <td><%=person.credits%></td>
+          <td>
+              <a href="/transfer/<%=customer._id%>/<%=person._id%>"><button class="btn btn-success">Transfer</button></a>
+          </td>
+        </tr>
+        <% } %>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

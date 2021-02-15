@@ -1,0 +1,30 @@
+<%- include("partials/header"); -%>
+<div id="allaccount">
+  <h1 class="text-center heading1 py-3">All Accounts</h1>
+  <p>click on transfer button to transfer money</p>
+  <div class="container add-form-table">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Balance</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach(function(user){ %>
+        <tr>
+          <th scope="row"><%=user.name%></th>
+          <td><%=user.email%></td>
+          <td><%=user.credits%></td>
+          <td>
+              <a href="/transfer/<%=user._id%>"><button class="btn btn-success">Transfer</button></a>
+          </td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<%- include("partials/footer"); -%>
